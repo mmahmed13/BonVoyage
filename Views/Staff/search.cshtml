@@ -1,0 +1,68 @@
+﻿@model  Bon_Voyage.Models.Deal
+@{
+    if (Session["adminSession"] == null)
+    {
+        <script>
+            window.location = '@Url.Action("Login", "Home")'
+        </script>
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/style3.css">
+    <title>Admin | Bon Voyage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        label {
+            display: inline-block;
+            float: left;
+            clear: left;
+            width: 250px;
+            text-align: right;
+        }
+
+        input {
+            display: inline-block;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    @RenderPage("~/Views/Staff/adminLayout.cshtml")
+
+    <div id="main">
+        @using (Html.BeginForm("Search", "Staff"))
+        {
+            @Html.Label("Search");
+            @Html.TextBoxFor(m=>Model.name) 
+                <br /><br />
+                <input style="text-align:center ; margin-left:200px; width:115px;" type="submit" value="By Name">
+        }
+        <br /><br />
+@{
+    if (Model != null)
+    {
+    <table id="t1" style="width:70%">
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>@Model.name </td>
+            <td>@Model.country </td>
+            <td>@Model.price </td>
+        </tr>
+        
+
+    </table>
+        }
+    }
+
+</div>
+</body>
+</html>

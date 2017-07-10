@@ -1,0 +1,23 @@
+body
+{	
+	width:100%;
+	background-image: url(../images/form.jpg);
+	height:auto;
+	background-size: 700px 1300px;
+	font-family: Century Gothic, ‘Lucida Grande’, sans-serif;
+	overflow-x:hidden;
+}
+
+#signup
+{
+	height:auto;
+	width :600px;
+	background-color:white;
+	padding:10px 30px 30px 30px;
+	margin:20px 120px 20px 360px;
+}
+
+input[type=number]
+{
+	width: 394px;
+} 

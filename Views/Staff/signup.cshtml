@@ -1,0 +1,106 @@
+@{
+    ViewBag.Title = "Signup";
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up | Bon Voyage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			body
+			{	
+				width:100%;
+				background-image: url(../images/signup.png);
+                background-size:100%;
+				height:auto;
+				overflow-x:hidden;
+				font-family: Century Gothic, ‘Lucida Grande’, sans-serif;
+			}
+			
+			#login
+			{
+				height:440px;
+				width :300px;
+				background-color:white;
+				padding:10px;
+				margin-left:10%;
+				box-shadow: 10px 10px 5px #404040;
+			}
+			
+			#head1
+			{
+				width:50%;
+				height:100px;
+				margin-left:10%;
+				color : #f2f2f2;
+				font-family: Century Gothic, ‘Lucida Grande’, sans-serif;
+			}
+			
+			#in{
+			margin-left:auto;
+			margin-right:auto;
+			text-align:center;
+			}
+			
+			p 
+			{
+				text-align:center;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<a href='@Url.Action("Index", "Home")'> <img src="../images/backButton.png" style = "width:50px;height:50px;border:0;"></a>
+		<br/><br/>
+		<h1 id="head1" style="color=black">Bon Voyage Guide...<br/>Your Gateway to the World.</h1></br>
+		<div id="login">	
+		@using (Html.BeginForm("AddTempGuide", "Staff"))
+        {
+
+			<p style="font-size:20px ; color:black ; text-align:center">Become a Guide</p><br/>
+
+			<p>
+			Username 
+				
+				<input style="float:right; margin-right:15px" required="" name="uname" type="text">
+
+			<br/><br/>
+			 Password
+			
+			<input type="password" style="float:right; margin-right:15px" required="" name = "password"><br/><br/>
+                 
+                City
+                <input style="float:right; margin-right:15px" name="city" required="" type="text">
+
+                <br /><br />
+                Phone
+
+                <input style="float:right; margin-right:15px" required="" name="phone"><br />
+                <br />
+
+                Security Question
+                <select name="question">
+                    <option value="birth">What is your birth place</option>
+                    <option value="pet">What is your pet's name</option>
+                </select>
+                <br /><br />
+                Answer
+
+                <input style="float:right; margin-right:15px" required="" name="answer"><br />
+                
+			<br/>
+			</p>
+			<input style="text-align:center ; margin-left:100px; width:90px;" type="submit" name="submit" value ="Sign Up" ><br/>
+
+        }
+
+
+		</div>
+		
+	
+	</body>
+	
+	
+</html>

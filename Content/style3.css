@@ -1,0 +1,106 @@
+		body,h1
+		{
+			width:100%;
+			height : auto;
+			margin:0px;
+			font-family: Century Gothic, ‘Lucida Grande’, sans-serif;
+			overflow-x:hidden;
+		}
+		head
+		{
+			margin-top:0px;
+		}
+		
+		#banner
+		{
+			width:83%;
+			float:right;
+			height:50px;
+			padding-left:140px;
+			line-height:270%;
+			margin-right:0px;
+			margin-left:0px;
+			margin-top:0px;
+			background:linear-gradient(to right,#404040,#8c8c8c);
+		}
+		
+		#nav
+		{
+			float:left;
+			width:20%;
+			height:100%;
+			display:inline-block;
+			margin: 0px;
+			background-color:#262626;
+			position:fixed;
+			overflow-x: hidden;
+			padding-top:50px;
+		}
+		
+		#main
+		{
+			float:right;
+			position:relative;
+			width:75%;
+			height:100%;
+			min-height:750px;
+			padding:2.5%;
+			padding-top:50px;
+			margin-left:0px;
+			background-color:#cce5ff;
+		}
+		
+		table, th, td 
+		{
+			margin-left:auto;
+			margin-right:auto;
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td 
+		{
+			padding: 5px;
+			text-align: left;
+		}
+		table#t1 tr:nth-child(even) 
+		{
+			background-color: #eee;
+		}
+		table#t1 tr:nth-child(odd) 
+		{
+		   background-color:#fff;
+		}
+		table#t1 th 
+		{
+			background-color: black;
+			color: white;
+		}
+		
+		#list1
+		{
+			display:inline-block;
+			width:100%;
+			text-align:left;
+			text-decoration:none;
+			color:white;
+			line-height:200%;
+			font-size:20px;
+		}
+		#list1:hover, #list1:active 
+		{
+			background-color: white;
+			color:#8f246b;
+		}
+		
+		#normhead
+		{
+			color:white;
+			font-size:28px;
+			text-align:center;
+		}
+		#normhead2
+		{
+			color:white;
+			font-size:28px;
+			text-align:center;
+		}
