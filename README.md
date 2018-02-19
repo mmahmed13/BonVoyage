@@ -6,4 +6,4 @@ Bon Voyage is an online site that provides vacation deals. HTML, CSS and JavaScr
 
 Users have to select the country in which they are interested and we show you the deals available in its cities.
 
-![bonvoyage3](https://user-images.githubusercontent.com/25735076/36364628-fe9c62c4-1566-11e8-962b-3537e9d55714.PNG)
+![bonvoyage2](https://user-images.githubusercontent.com/25735076/36364748-cf2e3af2-1567-11e8-800f-d66316e2c289.PNG)
